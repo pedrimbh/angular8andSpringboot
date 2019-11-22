@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>My todos</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>Target Date</th>
+        <th>Done</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos; let i = index">
+        <td>{{ todo.id }}</td>
+        <td>{{ todo.description }}</td>
+        <td>{{ todo.targetDate | date | uppercase }}</td>
+        <td>{{ todo.done }}</td>
+      </tr>
+      <!-- <tr>
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.descripition }}</td>
+    </tr> -->
+    </tbody>
+  </table>
+</div>
