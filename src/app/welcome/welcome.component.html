@@ -1,4 +1,7 @@
 <div class="container">
-  <h1>welcome {{ name }}</h1>
+  <h1>{{ mensageService }}</h1>
   <p>You can manage yours Todos <a [routerLink]="['/todos']">here</a></p>
+</div>
+<div class="container">
+  <p>CLick for see a new mensage <button (click)="getMensage()" class="btn btn-success">Click now</button></p>
 </div>
