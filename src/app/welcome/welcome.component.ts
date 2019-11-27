@@ -18,12 +18,12 @@ export class WelcomeComponent implements OnInit {
       .execulteWelcomeData(this.name)
       .subscribe(response => this.handlesucces(response), error => this.handleError(error));
   }
-  getMensage() {
-    console.log(this.welcomeDataService.execulteWelcomeData(this.name));
-    this.welcomeDataService
-      .execulteWelcomeData(this.name)
-      .subscribe(response => this.handlesucces(response), error => this.handleError(error));
-  }
+  // getMensage() {
+  //   console.log(this.welcomeDataService.execulteWelcomeData(this.name));
+  //   this.welcomeDataService
+  //     .execulteWelcomeData(this.name)
+  //     .subscribe(response => this.handlesucces(response), error => this.handleError(error));
+  // }
 
   handleError(error) {
     // console.log(error);
